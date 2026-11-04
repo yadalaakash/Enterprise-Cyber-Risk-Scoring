@@ -1,0 +1,222 @@
+{
+  "trained_timestamp": "2026-10-30 04:22:06 UTC",
+  "total_samples": 2000,
+  "train_samples": 1500,
+  "test_samples": 500,
+  "class_distribution": {
+    "Medium": 838,
+    "Low": 802,
+    "High": 317,
+    "Critical": 43
+  },
+  "models": {
+    "random_forest": {
+      "accuracy": 98.8,
+      "precision": 98.81,
+      "recall": 98.8,
+      "f1_score": 98.78,
+      "confusion_matrix": [
+        [
+          198,
+          3,
+          0,
+          0
+        ],
+        [
+          1,
+          208,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          79,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          9
+        ]
+      ]
+    },
+    "decision_tree": {
+      "accuracy": 99.0,
+      "precision": 99.01,
+      "recall": 99.0,
+      "f1_score": 98.98,
+      "confusion_matrix": [
+        [
+          199,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          208,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          79,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          9
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "accuracy": 99.2,
+      "precision": 99.21,
+      "recall": 99.2,
+      "f1_score": 99.18,
+      "confusion_matrix": [
+        [
+          201,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          207,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          79,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          9
+        ]
+      ]
+    },
+    "voting_ensemble": {
+      "accuracy": 99.0,
+      "precision": 99.0,
+      "recall": 99.0,
+      "f1_score": 99.0,
+      "confusion_matrix": [
+        [
+          199,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          207,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          79,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          10
+        ]
+      ]
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "eml_suspicious_domain",
+      "importance": 13.47
+    },
+    {
+      "feature": "eml_phishing_score",
+      "importance": 12.37
+    },
+    {
+      "feature": "end_cpu_spike_sec",
+      "importance": 10.17
+    },
+    {
+      "feature": "eml_link_count",
+      "importance": 9.72
+    },
+    {
+      "feature": "end_registry_modifications",
+      "importance": 7.33
+    },
+    {
+      "feature": "end_unauthorized_access",
+      "importance": 6.35
+    },
+    {
+      "feature": "end_malware_indicators",
+      "importance": 5.74
+    },
+    {
+      "feature": "net_port_scan_count",
+      "importance": 5.21
+    },
+    {
+      "feature": "net_external_connection_rate",
+      "importance": 5.2
+    },
+    {
+      "feature": "eml_spf_dkim_fail",
+      "importance": 4.71
+    },
+    {
+      "feature": "net_failed_logins",
+      "importance": 4.49
+    },
+    {
+      "feature": "net_packet_anomaly_score",
+      "importance": 3.87
+    },
+    {
+      "feature": "eml_malicious_attachment",
+      "importance": 3.81
+    },
+    {
+      "feature": "end_suspicious_processes",
+      "importance": 3.04
+    },
+    {
+      "feature": "net_bytes_transferred_mb",
+      "importance": 1.61
+    },
+    {
+      "feature": "net_suspicious_ip",
+      "importance": 1.33
+    },
+    {
+      "feature": "end_privilege_escalation",
+      "importance": 1.1
+    },
+    {
+      "feature": "net_unusual_protocol",
+      "importance": 0.48
+    }
+  ],
+  "classes": [
+    "Low",
+    "Medium",
+    "High",
+    "Critical"
+  ]
+}
