@@ -1,4 +1,4 @@
-const BASE_URL = '/api';
+const BASE_URL = 'https://enterprise-cyber-risk-scoring.onrender.com/api';
 
 export const api = {
   // Health
