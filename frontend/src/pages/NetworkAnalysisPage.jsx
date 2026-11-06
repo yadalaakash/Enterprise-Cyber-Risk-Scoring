@@ -89,7 +89,7 @@ export default function NetworkAnalysisPage() {
 
         <div className="flex items-center gap-2.5">
           <a
-            href="/api/sample-datasets/network"
+            href="https://enterprise-cyber-risk-scoring.onrender.com/api/sample-datasets/network"
             download
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-semibold border border-slate-800 transition-colors"
           >
