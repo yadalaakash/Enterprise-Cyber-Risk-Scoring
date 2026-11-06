@@ -66,7 +66,12 @@ class CyberRiskEnsemblePipeline:
     def __init__(self):
         self.imputer = SimpleImputer(strategy='median')
         self.scaler = StandardScaler()
-        self.rf_model = RandomForestClassifier(n_estimators=120, max_depth=12, random_state=42)
+        self.rf_model = RandomForestClassifier(
+    n_estimators=120,
+    max_depth=12,
+    random_state=42,
+    n_jobs=1
+)
         self.dt_model = DecisionTreeClassifier(max_depth=8, random_state=42)
         self.lr_model = LogisticRegression(max_iter=1500, random_state=42)
         self.ensemble_model = None
