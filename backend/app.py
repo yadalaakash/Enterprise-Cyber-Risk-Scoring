@@ -216,6 +216,7 @@ def upload_telemetry_csv():
             'end': config.get('endpoint_weight', 0.35),
             'eml': config.get('email_weight', 0.30)
         }
+        df = df.head(100).copy()
         
         batch_results = pipeline.predict_batch_df(df, weights=weights)
         
